@@ -2,26 +2,77 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width-device-width, initial-scale-1.0"
+<meta name="viewport" content="width-device-width, initial-scale-1.0">
 <title>Portfolio</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<link href="tablet.css" rel="stylesheet" media="screen and (max-width=800px)" type="text/css">
+<link href="phone.css" rel="stylesheet" media="screen and (max-width=530px)" type="text/css">
 </head>
 
 <body>
 		<nav class="navbar">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact Me</a></li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact Me</a></li>
 			</ul>
 		</nav>
-	<section id="home">
+<section id="home">
+		<img src="https://i.stack.imgur.com/ILTQq.png" alt="">
 		<div class="main">
 			<h1 class="headings">I'm <br>Muhammad Faeez</h1>
 		</div>
 		
+	</section>
+	<section id="about">
+		<div id="pic">
+			<img src="https://pbs.twimg.com/profile_images/1457210050401894404/q6QZoKoI_400x400.jpg" alt="">
+			<div id="intro">
+				<h2>Muhammad Faeez Shabbir</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
+	</section>
+	<section id="portfolio">
+		<h1 class="headings">PORTFOLIO</h1>
+		<div class="gallery">
+			<img src="Assets/Images/nam.png" alt="">
+			<img src="Assets/Images/kc.png" alt="">
+			<img src="Assets/Images/lo1.png" alt="">
+			<img src="Assets/Images/logofaf.jpg" alt="">
+			<img src="Assets/Images/bby.jpg" alt="">
+		</div>
+	</section>
+	<section id="services">
+		<h1 class="headings">SERVICES</h1>
+		<div class="row">
+			<div class="box">
+				<img src="https://img.icons8.com/ios-filled/50/000000/web.png" alt=""/>
+				<h1 class="headings">Website Designer</h1>
+				<p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. </p>
+			</div>
+			<div class="box">
+				<img src="https://img.icons8.com/ios/50/000000/designer.png" alt=""/>
+				<h1 class="headings">Graphic Designer</h1>
+				<p>Graphic designers create visual concepts, using computer software or by hand, to communicate ideas that inspire, inform, and captivate consumers. They develop the overall layout and production design for applications such as advertisements, brochures, magazines, and reports. </p>
+			</div>
+			<div class="box">
+				<img src="https://img.icons8.com/ios/50/000000/developer--v1.png" alt=""/>
+				<h1 class="headings">Software Developer</h1>
+				<p>A computer programmer, sometimes called a software developer, a programmer or more recently a coder, is a person who creates computer software. The term computer programmer can refer to a specialist in one area of computers or to a generalist who writes code for many kinds of software. </p>
+			</div> 
+		</div>
+	</section>
+	<section id="contact">
+		<h1 class="headings">CONTACT</h1>
+		<form action="" class="form">
+			<input type="text" name="name" class="input" placeholder="Enter Your Name">
+			<input type="email" name="email" class="input" placeholder="Enter Your Email">
+			<textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Massage"></textarea>
+			<input type="submit" value="SEND" id="send">
+		</form>
 	</section>
 </body>
 </html>
